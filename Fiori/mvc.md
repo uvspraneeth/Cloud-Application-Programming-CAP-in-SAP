@@ -22,7 +22,7 @@
 
 ***
 
-# Introduction
+## Introduction
 
 The **Model-View-Controller (MVC)** architecture in SAPUI5 enables developers to split application data, user interface, and logic for optimal maintainability and development scalability. Changes in one area (Model, View, or Controller) can be made independently without affecting the others.
 
@@ -176,4 +176,3 @@ Adopting MVC with SAPUI5 supports clear, maintainable enterprise applications. U
 
 ***
 
-Would you like a downloadable template or starter files for this structure?
