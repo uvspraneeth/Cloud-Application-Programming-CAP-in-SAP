@@ -46,16 +46,13 @@ It includes:
 
 **Floorplans and templates** (List Report, Object Page, Overview Page, etc.)
 
-UI Guidelines & Governance Rules
-
 Essentially, Fiori defines *“what good UX means in SAP.”*
+Now, Let's come to SAPUI5 framework,
 
 **SAPUI5** (for SAP internal) or **OpenUI5** (open-source version) is the technical framework that implements Fiori’s design principles.
 
 Think of UI5 as the execution engine for Fiori UX.
-
 Fiori gives you rules and templates.
-
 UI5 gives you controls, data binding, and APIs to build them
 
 >*"Fiori uses the UI5 framework to implement its design language"*
@@ -81,3 +78,4 @@ SAP built this design system around five design principles:
 | Coherent   | Unified interaction model and visuals.                                  |
 | Simple     | Only the data and actions that matter — no noise.                       |
 | Delightful | Subtle animations, predictable behavior, and modern aesthetics.         |
+
