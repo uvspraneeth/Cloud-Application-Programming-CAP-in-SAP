@@ -1,0 +1,24 @@
+{
+  "generationParameters": {
+    "generationDate": "Mon Nov 10 2025 16:28:11 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "Local CAP",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/odata/v4/book/",
+    "appName": "bookshop",
+    "appTitle": "A bookshop application",
+    "appDescription": "A bookshop application",
+    "appNamespace": "com.uvs",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.142.0",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.19.3",
+    "template": "Basic V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/bookshop/webapp/index.html"
+  }
+}
