@@ -9,9 +9,30 @@
                 alignItems="Center"
                 width="100%">
             <VBox class="sapUiSamllMargin">
+                <!--Name-->
                 <Label text="Full Name" labelFor="nameInput"></Label>
                 <Input id="nameInput" value="{/formData/name}" placeholder="Enter your full name"/>
 
+                <!-- Gender-->
+                 <Label text="Gender" labelFor="genderGroup"></Label>
+                 <RadioButtonGroup
+                        id="genderGroup"
+                        columns="3"
+                        selectedIndex="{/formData/gender}"
+                        />
+
+                <!-- Data of Birth-->
+                 <Label text="Date of Birth" labelFor="dobPicker"></Label>
+                <DatePicker 
+                    id="dobPicker"
+                    value="{/formData/dob}"
+                    displayFormat="long"
+                    valueFormat="yyyy-MM-dd"
+                    placeholder="Select birth date"
+                    change=".onDateChange"
+                ></DatePicker>
+
+                <!-- Email address-->
                 <Label text="Email" labelFor="emailInput"></Label>
                 <Input id="emailInput" value="{/formData/email}" placeholder="Enter your email address" type="Email" />
 
