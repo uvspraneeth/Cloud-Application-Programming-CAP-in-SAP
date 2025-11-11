@@ -1,22 +1,27 @@
-<mvc:View controllerName="com.uvs.bookshop.controller.bookshop"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <IconTabBar id="idIconTabBar" expandable="false" select=".onSelectTab">
-      <items>
+<mvc:View
+  controllerName="com.uvs.bookshop.controller.bookshop"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
 
+  <Page title="{i18n>title}">
+    <IconTabBar expandable="false">
+      <items>
         <!-- Authors Tab -->
-        <IconTabFilter id="author_tab" text="Authors" key="authors" icon="sap-icon://person-placeholder">
-          <Table id="authorsTable" inset="false" growing="true" items="{authorsModel>/Authors}">
+        <IconTabFilter text="Authors" key="authors" icon="sap-icon://person-placeholder">
+          <Table items="{/authors}" growing="true">
             <columns>
-              <Column id="authoridcol"><Text id="author_id" text="Author ID"/></Column>
-              <Column id="authorcol"><Text id="author_name" text="Name"/></Column>
+              <Column>
+                <Text text="Author ID" />
+              </Column>
+              <Column>
+                <Text text="Name" />
+              </Column>
             </columns>
             <items>
-              <ColumnListItem id="author_col_listitem" >
+              <ColumnListItem>
                 <cells>
-                  <Text id="author_id_val" text="{authorsModel>ID}"/>
-                  <Text id="author_name_val" text="{authorsModel>name}" />
+                  <Text text="{ID}" />
+                  <Text text="{name}" />
                 </cells>
               </ColumnListItem>
             </items>
@@ -24,24 +29,27 @@
         </IconTabFilter>
 
         <!-- Books Tab -->
-        <IconTabFilter id="book_tab" text="Books" key="books" icon="sap-icon://learning-assistant">
-          <Table id="booksTable" inset="false" growing="true" items="{booksModel>/Books}">
+        <IconTabFilter text="Books" key="books" icon="sap-icon://education">
+          <Table items="{/books}" growing="true">
             <columns>
-              <Column id="book_idcol"><Text id="book_id" text="Book ID"/> </Column>
-              <Column id="book_titlecol" ><Text id="book_title" text="Title"/></Column>
+              <Column>
+                <Text text="Book ID" />
+              </Column>
+              <Column>
+                <Text text="Title" />
+              </Column>
             </columns>
             <items>
-              <ColumnListItem id="book_col_listitem" >
+              <ColumnListItem>
                 <cells>
-                  <Text id="book_ID_val" text="{booksModel>ID}" />
-                  <Text id="book_title_val" text="{booksModel>title}" />
+                  <Text text="{ID}" />
+                  <Text text="{title}" />
                 </cells>
               </ColumnListItem>
             </items>
           </Table>
         </IconTabFilter>
-
       </items>
     </IconTabBar>
-    </Page>
+  </Page>
 </mvc:View>

@@ -1,0 +1,45 @@
+<mvc:View controllerName="com.uvs.form.controller.form"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox class="sapUiSmallMargin sapUiLargeMarginTop"
+                justifyContent="Center"
+                alignItems="Center"
+                width="100%">
+            <VBox class="sapUiSamllMargin">
+                <Label text="Full Name" labelFor="nameInput"></Label>
+                <Input id="nameInput" value="{/formData/name}" placeholder="Enter your full name"/>
+
+                <Label text="Email" labelFor="emailInput"></Label>
+                <Input id="emailInput" value="{/formData/email}" placeholder="Enter your email address" type="Email" />
+
+                <Label text="City" labelFor="cityCombo"></Label>
+                <ComboBox 
+                    id="cityCombo"
+                    placeholder="Select your city"
+                    selectedKey="{/formData/city}"
+                    items="{
+                        path: '/cities'
+                    }"
+                >
+                <core:Item key="{key}" text="{name}" /></ComboBox>
+                <Label text="Country" labelFor="countrySelect"/>
+                <!-- A Countries dropdown-->
+                <Select id="countrySelect" selectedKey="{/formData/country}">
+                    <core:Item key="IN" text="India"/>
+                    <core:Item key="US" text="United States"/>
+                    <core:Item key="UK" text="United Kingdom"/>
+                    <core:Item key="DE" text="Germany"/>
+                </Select>
+
+                 <HBox class="sapUiSmallMarginTop">
+                    <Button text="Submit" type="Emphasized" press=".onSubmit"/>
+                    <Button text="Reset" type="Reject" press=".onReset" class="sapUiTinyMarginBegin"/>
+                </HBox>
+            </VBox>
+        </VBox>
+        </content>
+    </Page>
+</mvc:View>
